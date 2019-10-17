@@ -9,19 +9,19 @@ void bar(int z)
 {
     window(z+1,22,70,25);
     textcolor(10);
-    cprintf("    Û  ");
+    cprintf("    Ã›  ");
     window(z+1,23,70,25);
-    cprintf("   Ş");
+    cprintf("   Ã");
     textcolor(9);
-    cprintf("Û");
+    cprintf("Ã›");
     textcolor(10);
-    cprintf("İ  ");
+    cprintf("Ã  ");
     window(z+1,24,70,25);
-    cprintf("  Ş");
+    cprintf("  Ã");
     textcolor(9);
-    cprintf("ÛßÛ");
+    cprintf("Ã›ÃŸÃ›");
     textcolor(10);
-    cprintf("İ  ");
+    cprintf("Ã  ");
 }
 const int sz=6;
 int xx[sz],yy[sz];
@@ -106,7 +106,7 @@ void down()
         cprintf("+#");
         if(yy[i]>=20)
         {
-            status(3);
+           status(3);
             sound(100);
             delay(210);
             nosound();
@@ -137,10 +137,10 @@ void main()
     _setcursortype(_NOCURSOR);
     randomize();
     textcolor(15);
-    cprintf("\n Ú                                                             ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ ");
+    cprintf("\n Ãš                                                             ÃšÃ„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Â¿ ");
     for(int i=0;i<18;i++)
-    cprintf(" ³                                                             ³              ³ ");
-    cprintf(" À                                                             ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ ");
+    cprintf(" Â³                                                             Â³              Â³ ");
+    cprintf(" Ã€                                                             Ã€Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã™ ");
     window(66,3,78,21);
     textcolor(11);
     cprintf("Press X      ");
@@ -155,7 +155,7 @@ void main()
     cprintf("Press Left,  ");
     cprintf("Right to Move\n");
     textcolor(WHITE);
-    cprintf("ÄÄÄÄÄÄÄÄÄÄÄÄ ");
+    cprintf("Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„ ");
     cprintf("Status:      ");
     cprintf("   Stoped    \n");  // cprintf("  Playing.. "); cprintf("   Stoped   ");
     cprintf("Score :      ");
@@ -217,10 +217,8 @@ void main()
                         else if(ch==77 && x<55)
                         {
                             x+=1;
-                            bar(x);
-                        }
-                        break;
-            case 'x' : return;
+                            bar(x);}
+                        break; case 'x' : return;
         }
     }
 }
