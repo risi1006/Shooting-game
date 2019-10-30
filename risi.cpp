@@ -144,7 +144,7 @@ void main()
     window(66,3,78,21);
     textcolor(11);
     cprintf("Press X      ");
-    cprintf("to Exit_____ \n");
+    cprintf("to Exit_____ \n");//come out of game
     textcolor(14);
     cprintf("Press P to   ");
     cprintf("Pause Game__ \n");
