@@ -42,7 +42,7 @@ void up()
                 window(74,20,80,24);
                 scr++;
                 textcolor(15);
-                cprintf("%d",scr);
+                cprintf("%d",scr); //print
                 if(scr<10)
                 cprintf("  ");
                 else cprintf(" ");
