@@ -109,7 +109,7 @@ void down()
         cprintf("+#");
         if(yy[i]>=20)
         {
-            status(3);
+           status(3);
             sound(100);
             delay(220);
             nosound();
@@ -220,10 +220,8 @@ void main()
                         else if(ch==77 && x<55)
                         {
                             x+=1;
-                            bar(x);
-                        }
-                        break;
-            case 'x' : return;
+                            bar(x);}
+                        break; case 'x' : return;
         }
     }
 }
