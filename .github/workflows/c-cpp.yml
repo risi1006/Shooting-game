@@ -13,8 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: risi
-      run: ./risi
+    - name: risi.cpp
+      run: chmod +x ./risi.cpp
     - name: make
       run: make
     - name: make check
